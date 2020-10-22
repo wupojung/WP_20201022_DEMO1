@@ -35,12 +35,13 @@
             // btnGo
             // 
             this.btnGo.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnGo.Location = new System.Drawing.Point(265, 94);
+            this.btnGo.Location = new System.Drawing.Point(265, 75);
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(122, 96);
             this.btnGo.TabIndex = 0;
             this.btnGo.Text = "Go";
             this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // rtbMsg
             // 

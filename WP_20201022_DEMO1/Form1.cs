@@ -16,5 +16,10 @@ namespace WP_20201022_DEMO1
         {
             InitializeComponent();
         }
+
+        private void btnGo_Click(object sender, EventArgs e)
+        {
+            rtbMsg.Text = "AAAAA";
+        }
     }
 }
