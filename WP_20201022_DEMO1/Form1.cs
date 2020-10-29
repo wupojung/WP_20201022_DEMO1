@@ -31,5 +31,26 @@ namespace WP_20201022_DEMO1
 
             rtbMsg.Text = msg + "\n";
         }
+
+        int id = 0;
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //模擬連線到DB 取得ID 
+            id = 46715464;
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            //更新畫面
+            labId.Text = "ID:" + id;
+            //labId.Text = $"ID:{id}";
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
     }
 }

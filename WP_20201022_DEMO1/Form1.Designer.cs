@@ -30,6 +30,7 @@
         {
             this.btnGo = new System.Windows.Forms.Button();
             this.rtbMsg = new System.Windows.Forms.RichTextBox();
+            this.labId = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGo
@@ -51,16 +52,31 @@
             this.rtbMsg.TabIndex = 1;
             this.rtbMsg.Text = "";
             // 
+            // labId
+            // 
+            this.labId.AutoSize = true;
+            this.labId.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labId.Location = new System.Drawing.Point(45, 35);
+            this.labId.Name = "labId";
+            this.labId.Size = new System.Drawing.Size(139, 24);
+            this.labId.TabIndex = 2;
+            this.labId.Text = "ID:123456789";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(680, 408);
+            this.Controls.Add(this.labId);
             this.Controls.Add(this.rtbMsg);
             this.Controls.Add(this.btnGo);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -68,6 +84,7 @@
 
         private System.Windows.Forms.Button btnGo;
         private System.Windows.Forms.RichTextBox rtbMsg;
+        private System.Windows.Forms.Label labId;
     }
 }
 
